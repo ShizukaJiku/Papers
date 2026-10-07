@@ -1,0 +1,42 @@
+# Notas de lectura: artículos de Joaquín (revisión 07-10-2026)
+
+Notas para que Carlos complete la parte gris de `Matriz_Joaquin.xlsx`. Solo se cambió la parte amarilla de los Excel. Los criterios usados son los de la Tabla 10 del documento SIA (CI1–CI5 y CE1–CE4) y las rondas de la guía de Joaquín.
+
+**Cuartiles:** ninguno está verificado. Scimago bloquea el acceso automático, así que hay que revisarlos a mano y guardar la captura.
+
+## Preseleccionados (Matriz, filas 5–9)
+
+| # | Artículo | PDF | País | Lectura |
+|---|---|---|---|---|
+| 1 | Ajagbe et al. (2025), *Discover Artificial Intelligence* | Sí | Sudáfrica | **Se mantiene con nota.** Compara XGBoost, KNN, RF, Isolation Forest y SVM con el dataset IBM AML de Kaggle, que es sintético aunque el artículo lo llama "real". Gana XGBoost, un modelo supervisado, con accuracy 1,00. Isolation Forest tiene AUC 0,62. **No compara contra sistemas de reglas.** El AUC de XGBoost aparece como 0,94 en un lugar y 0,62 en otro. Hay que corregir el Cap. 1, que en Antecedentes y en Formulación le atribuye que "la detección de anomalías supera a las reglas simples". |
+| 2 | Bakry et al. (2024), *J. Supercomputing* | Sí | Egipto | ASXAML: XGBoost + RFECV + Optuna para suprimir alertas falsas de un sistema de reglas. Datos reales de un banco: 46 escenarios y 210 996 clientes con alerta en 6 meses. Resultados: F-beta 0,86, recall 0,92 y 73 % menos falsos positivos. Es supervisado (usa la decisión del analista como etiqueta). Responde P1, P2, P3, P5. |
+| 3 | Kungu et al. (2026), *ML with Applications* | **Falta** | Kenia (afiliación en Scopus) | No se pudo descargar. DOI corregido a 10.1016/j.mlwa.2026.100856. |
+| 4 | Luo et al. (2024), *IEEE TIFS* | **Falta** | Pendiente | Es de pago. Hay que bajarlo de la biblioteca UPC. |
+| 5 | Reite et al. (2025), *J. Money Laundering Control* | Sí (versión aceptada del autor) | Noruega | Clasificación de riesgo del cliente con datos reales de BN Bank: PYMES, 500 767 observaciones, 2021–2023. Prueba XGBoost, LGBM y HistGB. El AUC es 0,94 combinando datos bancarios, de crédito y contables, y baja a 0,81–0,85 con solo datos bancarios. **Limitación para Perumoney:** una casa de cambio no tiene datos contables ni de crédito de personas naturales. Responde P2, P3, P4. |
+
+## Candidatos (Candidatos_Joaquin.xlsx)
+
+- **Ronda 1 (título):** 17 siguen y 9 salen. Salen un survey, un review, uno de blockchain, cinco de leyes, ética o gobernanza, y Kungu porque está duplicado.
+- **Ronda 2 (resumen):** 16 siguen. Sale "Predicting money laundering sanctions" porque predice sanciones a países, no operaciones.
+- **Ronda 4, por lectura del PDF:** salen Ouf (fila 4) y Ruchay (fila 6). Los dos son fraude de tarjetas de crédito con datasets de Kaggle, no lavado de activos.
+
+### Leídos y pendientes de cuartil
+
+| Fila | Artículo | Revista | Lectura |
+|---|---|---|---|
+| 19 | Irshad et al. (2024), GCF-MLD | IEEE Access | **Muy relevante.** Usa datos reales de un banco de Pakistán: 1,77 M transacciones y 9 925 cuentas. El método es **no supervisado** (clustering + centralidad de grafos) y las etiquetas solo se usan para evaluar, que es justo el caso de P5. Con clustering jerárquico: precisión 0,87, recall 0,83, AUC 0,91. Debilidades: solo 75 cuentas sospechosas y no compara contra reglas. Si es Q1 o Q2, pasa las rondas 4 y 5. |
+| 55 | Ejime et al. (2026), FinCEN Files | IEEE Access | Útil para P4: RF y XGBoost llegan a AUC ~0,97, mientras Isolation Forest y One-Class SVM quedan bajo 0,75. Debilidades: la etiqueta la construyen los autores con su propio score de riesgo, el test es de solo 41 casos y son transacciones entre bancos. **Dudoso.** |
+| 31 | Asomura et al. (2023) | J. Information Processing | Datos reales de un banco de Japón: RF con FPR 0,000 y FNR 0,005. Pero detecta transferencias no autorizadas (robo de cuentas), no lavado. **Probablemente Sale.** |
+
+### Faltan PDF (de pago o bloqueados): filas 8, 21, 25, 27, 29, 37, 39, 41, 43, 52, 81
+
+Los de más prioridad por tema:
+- **Fila 21** (sistema multiagente con datos reales de banco y riesgo)
+- **Fila 39** (transferencias fraudulentas con GNN y datos reales)
+- **Fila 8** (Anti-TrustRank)
+- **Fila 43** (atributos para reportar SAR)
+- **Fila 52** (evaluación descentralizada)
+
+Avisos para la ronda 4:
+- La fila 37 parece fraude de tarjetas.
+- Las filas 25 y 27 usan datos sintéticos o simulados.

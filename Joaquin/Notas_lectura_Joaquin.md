@@ -64,3 +64,10 @@ En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–
 | Candidatos fila 52 | Gige et al. (2026), Dinamarca | **Reserva.** Usa solo datos sintéticos (IBM-AML) y grafos entre muchos bancos. Aporta a P5 que, si cada entidad ve solo sus datos, el rendimiento cae y los modelos simples rinden mejor. |
 | Candidatos fila 29 | Preciado et al. (2025), España | **Sale (ronda 4).** Trata de fraude en transferencias, no de lavado. Reporta 0 falsos positivos con solo 95 fraudes en el test, lo que es poco creíble. |
 | Candidatos fila 81 | SF-DynFinGC (2026), Malasia/China | **Sale recomendado (ronda 4).** Es un método genérico de grafos dinámicos para GNN y necesita un grafo entre cuentas. No es de cripto. |
+
+## PDF de pago recibidos (10-10-2026)
+
+| Archivo / fila | Artículo | Veredicto |
+|---|---|---|
+| Matriz fila 8 | Luo et al. (2024), China | **Cumple, aunque falta el cuartil.** MLaD2 es una GNN semisupervisada sobre la red entre cuentas, con pre-entrenamiento contrastivo. Usa datos reales de una agencia policial china. Con solo 10 % de etiquetas supera a XGBoost, a GAT y a los métodos no supervisados. Respalda lo que el Cap. 1 le atribuye. **Limitaciones:** un solo dataset pequeño, necesita un grafo entre cuentas que Perumoney no tiene, y algunas etiquetas. Responde P3, P4, P5. |
+| Candidatos fila 21 | Alexandre y Balsa (2023), Portugal/Brasil | **Cumple y es muy relevante, aunque falta el cuartil.** Arma perfiles de comportamiento de 2,4 M clientes y los agrupa en 5 perfiles con k-means. Suma reglas J48 y reglas legales, y ordena los casos con un Índice de Sospecha. **Validación con analistas:** 89 de 189 clientes fueron confirmados como sospechosos, incluidos casos que el sistema vigente no veía. No necesita etiquetas. Responde P1, P2, P3, P5. **Ojo con CE2:** es de 2023. |

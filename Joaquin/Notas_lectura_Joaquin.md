@@ -55,3 +55,12 @@ En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–
 | Candidatos fila 81 | SF-DynFinGC (2026) | **Baja.** Usa GNN sobre grafos de cuentas, que Perumoney no tiene, y sus datasets no están identificados. Hay que revisar si son de cripto (CE4). |
 
 **Corrección:** la fila 37 de Candidatos **no** es de acceso abierto. Pasa a la lista de pago.
+
+## Lectura completa de los 4 de acceso abierto (10-10-2026)
+
+| Archivo / fila | Artículo | Veredicto |
+|---|---|---|
+| Matriz fila 7 | Kungu et al. (2026), Kenia | **Cumple, aunque falta el cuartil.** Usa 54 258 pagos SWIFT reales. Entrena One-Class SVM solo con operaciones normales, sin etiquetas, y obtiene P@5 % de 99,26 % en el test, frente a 83,99 % de Isolation Forest. Tiene validación operativa en otra entidad. **Ojo:** la "verdad" con la que evalúan son las mismas reglas (un proxy), no reportes de operaciones sospechosas confirmados. Sus variables son reutilizables para Perumoney: tiempo desde la operación anterior, antigüedad del cliente, desvío del monto, volatilidad y bandera de fraccionamiento. Responde P2–P5. |
+| Candidatos fila 52 | Gige et al. (2026), Dinamarca | **Reserva.** Usa solo datos sintéticos (IBM-AML) y grafos entre muchos bancos. Aporta a P5 que, si cada entidad ve solo sus datos, el rendimiento cae y los modelos simples rinden mejor. |
+| Candidatos fila 29 | Preciado et al. (2025), España | **Sale (ronda 4).** Trata de fraude en transferencias, no de lavado. Reporta 0 falsos positivos con solo 95 fraudes en el test, lo que es poco creíble. |
+| Candidatos fila 81 | SF-DynFinGC (2026), Malasia/China | **Sale recomendado (ronda 4).** Es un método genérico de grafos dinámicos para GNN y necesita un grafo entre cuentas. No es de cripto. |

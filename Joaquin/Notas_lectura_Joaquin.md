@@ -81,3 +81,13 @@ En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–
 | Andreescu et al. (2025), *AML Compliance Using Feature Engineering with SQL Analytics, TF-IDF and Oversampling: CTGAN* (Rumania) | Informatica (Vilnius) 36(3) | 10.15388/25-INFOR598 | **Leído. Reserva.** Cumple en lo formal, pero usa datos **sintéticos** (demo de DataRobot, alertas de tarjeta de crédito). Su ingeniería de variables (sumas acumuladas, promedios móviles, diferencias entre filas) sirve para P2 e IE5. Con RF: AUC 0,95, recall 0,99, F1 0,53 |
 | *PageRank-Based Unsupervised Deep Vertex Representations for AML Detection* (2025) | IEEE Access | 10.1109/ACCESS.2025.3634197 | Falta el PDF (IEEE; la descarga automática fue bloqueada) |
 | *Complex networks-based anomaly detection for financial transactions in AML* (2025) | Forensic Science International: Digital Investigation | 10.1016/j.fsidi.2025.302005 | Falta el PDF (ScienceDirect) |
+
+## Shih et al. (2025), Candidatos fila 39 → Matriz fila 12 (10-10-2026)
+
+**Cumple (Q1, ESWA).** Aunque el título dice "fraud", el artículo predice **eventos SAR** (reportes de operación sospechosa de lavado) en un **banco real de Taiwán**, a partir de alertas del sistema de monitoreo definidas con la tipología oficial de LA/FT.
+
+- **Método:** convierte las transacciones irregulares de los 15 días hábiles previos en series regulares. Usa un autoencoder con self-attention, más una GNN sobre las relaciones entre clientes, más CVAE/WGAN para generar casos positivos ante el desbalance.
+- **Tipo:** supervisado; la etiqueta es la decisión del área legal del banco.
+- **Resultados:** AUPRC de 27 %, contra 0,66–22,15 % de XGBoost y otras redes.
+- **Limitaciones:** usa un solo banco y necesita relaciones entre clientes.
+- **Responde:** P2 (variables por ventana temporal), P3, P4 y P5.

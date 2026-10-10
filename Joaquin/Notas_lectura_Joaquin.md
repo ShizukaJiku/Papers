@@ -40,3 +40,18 @@ Los de más prioridad por tema:
 Avisos para la ronda 4:
 - La fila 37 parece fraude de tarjetas.
 - Las filas 25 y 27 usan datos sintéticos o simulados.
+
+## Pre-evaluación de los de acceso abierto (10-10-2026)
+
+Estos 4 son de acceso abierto, pero los sitios bloquean la descarga automática. La evaluación se hizo con el resumen y los metadatos de Crossref, y falta confirmarla con el PDF.
+
+En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–2026 y sin retractaciones. Por lo tanto, ninguno cae en CE1, CE2 ni CE3.
+
+| Archivo / fila | Artículo | Pre-evaluación |
+|---|---|---|
+| Matriz fila 7 | Kungu et al. (2026) | **Fuerte.** Aporte propio: VAE + GNN + reglas. Usa 54 258 transacciones reales de un banco de África Oriental y tiene una validación independiente en otra entidad de Kenia. Es no supervisado: One-Class SVM supera a Isolation Forest y LOF, con precisión 99,63 % en el 5 % superior de alertas, un análogo directo del IE10 del proyecto. Cumple CI1, CI3, CI4 y CI5. Responde P2, P3, P4 y P5. |
+| Candidatos fila 52 | Evaluating fraud detection algorithms in a decentralized scenario (2026) | **Media.** Útil para P5 porque propone un escenario de evaluación realista. No dice qué datos usa. Ojo con el cuartil: la revista es multidisciplinaria. |
+| Candidatos fila 29 | Comparative analysis… fraudulent banking transactions (2025) | **Baja-media.** Usa datos reales, pero trata de fraude y no de lavado de activos. Además, reporta "accuracy 100 %". Probablemente sale en la ronda 4. |
+| Candidatos fila 81 | SF-DynFinGC (2026) | **Baja.** Usa GNN sobre grafos de cuentas, que Perumoney no tiene, y sus datasets no están identificados. Hay que revisar si son de cripto (CE4). |
+
+**Corrección:** la fila 37 de Candidatos **no** es de acceso abierto. Pasa a la lista de pago.

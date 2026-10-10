@@ -71,3 +71,13 @@ En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–
 |---|---|---|
 | Matriz fila 8 | Luo et al. (2024), China | **Cumple, aunque falta el cuartil.** MLaD2 es una GNN semisupervisada sobre la red entre cuentas, con pre-entrenamiento contrastivo. Usa datos reales de una agencia policial china. Con solo 10 % de etiquetas supera a XGBoost, a GAT y a los métodos no supervisados. Respalda lo que el Cap. 1 le atribuye. **Limitaciones:** un solo dataset pequeño, necesita un grafo entre cuentas que Perumoney no tiene, y algunas etiquetas. Responde P3, P4, P5. |
 | Candidatos fila 21 | Alexandre y Balsa (2023), Portugal/Brasil | **Cumple y es muy relevante, aunque falta el cuartil.** Arma perfiles de comportamiento de 2,4 M clientes y los agrupa en 5 perfiles con k-means. Suma reglas J48 y reglas legales, y ordena los casos con un Índice de Sospecha. **Validación con analistas:** 89 de 189 clientes fueron confirmados como sospechosos, incluidos casos que el sistema vigente no veía. No necesita etiquetas. Responde P1, P2, P3, P5. **Ojo con CE2:** es de 2023. |
+
+## Búsqueda propia (10-10-2026): candidatos nuevos, no presentes en Candidatos_Joaquin.xlsx
+
+| Artículo | Revista | DOI | Estado |
+|---|---|---|---|
+| Ramadhan (2025), *Harnessing ML for money laundering detection: a criminological theory-centric approach* | J. Money Laundering Control 28(1) | 10.1108/JMLC-04-2024-0083 | Falta el PDF (pago, Emerald) |
+| Shadrooh y Nørvåg (2024), *SMoTeF: Smurf money laundering detection using temporal order and flow analysis* | Applied Intelligence | Por confirmar | Falta el PDF. Trata del fraccionamiento ("pitufeo"), relevante para Perumoney |
+| Andreescu et al. (2025), *AML Compliance Using Feature Engineering with SQL Analytics, TF-IDF and Oversampling: CTGAN* (Rumania) | Informatica (Vilnius) 36(3) | 10.15388/25-INFOR598 | **Leído. Reserva.** Cumple en lo formal, pero usa datos **sintéticos** (demo de DataRobot, alertas de tarjeta de crédito). Su ingeniería de variables (sumas acumuladas, promedios móviles, diferencias entre filas) sirve para P2 e IE5. Con RF: AUC 0,95, recall 0,99, F1 0,53 |
+| *PageRank-Based Unsupervised Deep Vertex Representations for AML Detection* (2025) | IEEE Access | 10.1109/ACCESS.2025.3634197 | Falta el PDF (IEEE; la descarga automática fue bloqueada) |
+| *Complex networks-based anomaly detection for financial transactions in AML* (2025) | Forensic Science International: Digital Investigation | 10.1016/j.fsidi.2025.302005 | Falta el PDF (ScienceDirect) |

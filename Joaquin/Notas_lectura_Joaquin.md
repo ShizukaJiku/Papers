@@ -100,3 +100,13 @@ En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–
 | Matriz fila 14 | Oliveira et al. (2025), *Complex networks-based anomaly detection… AML*, FSI: Digital Investigation, Brasil | **Cumple, falta el cuartil.** Usa datos reales de una investigación de lavado del Ministerio Público de Sergipe: 9 322 transacciones de 4 investigados. GNN no supervisada, más comunidades y ciclos. Valida sin etiquetas con Silhouette (0,83) y Davies-Bouldin (1,59). Sirve para P5. |
 | Matriz fila 15 | Shadrooh y Nørvåg (2024), *SMoTeF*, Applied Intelligence, Noruega | **Cumple, falta el cuartil.** Detecta el fraccionamiento con flujo temporal máximo. Se evaluó inyectando patrones en datos bancarios reales (Czech Financial Dataset). Ataca la causa C2. |
 | Candidatos fila 43 | Hayble-Gomes (2023), JMLC (Q2), EE. UU. | **Reserva.** Usa datos sintéticos y un solo escenario. Sirve para P2 (atributos relevantes para el SAR). Es de 2023. |
+
+## Decisión (11-10-2026): solo artículos de Candidatos_Joaquin.xlsx
+
+- **Salen de la Matriz** las filas 13 a 15: PageRank, Complex networks y SMoTeF. Venían de una búsqueda propia fuera de las bases y cadenas oficiales. Quedan registradas en estas notas como referencia.
+- **Entran:**
+  - Fila 13: Ejime et al. (2026), Candidatos fila 55, IEEE Access, Q1.
+  - Fila 14: Hayble-Gomes (2023), Candidatos fila 43, JMLC, Q2.
+- **Pendiente:**
+  - Fila 15: Gige et al. (2026), Candidatos fila 52, ya leído. Falta el cuartil de Royal Society Open Science.
+  - Fila 16: falta un artículo de Candidatos, entre las filas 41, 8, 27 y 25 (PDF de pago).

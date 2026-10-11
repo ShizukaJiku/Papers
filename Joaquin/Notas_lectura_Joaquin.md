@@ -91,3 +91,12 @@ En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–
 - **Resultados:** AUPRC de 27 %, contra 0,66–22,15 % de XGBoost y otras redes.
 - **Limitaciones:** usa un solo banco y necesita relaciones entre clientes.
 - **Responde:** P2 (variables por ventana temporal), P3, P4 y P5.
+
+## Lectura de 4 PDF (11-10-2026)
+
+| Destino | Artículo | Veredicto |
+|---|---|---|
+| Matriz fila 13 | Gezici y Sefer (2025), *PageRank-Based Unsupervised Deep Vertex Representations for AML Detection*, IEEE Access (Q1), Turquía | **APROBADO.** Embeddings no supervisados (PageRank personalizado más difusión) sobre el grafo de transacciones de un banco turco real (10 M nodos), más AMLSim. F1 de 0,85; supera a las GNN supervisadas y a DBSCAN. Necesita un grafo entre cuentas. |
+| Matriz fila 14 | Oliveira et al. (2025), *Complex networks-based anomaly detection… AML*, FSI: Digital Investigation, Brasil | **Cumple, falta el cuartil.** Usa datos reales de una investigación de lavado del Ministerio Público de Sergipe: 9 322 transacciones de 4 investigados. GNN no supervisada, más comunidades y ciclos. Valida sin etiquetas con Silhouette (0,83) y Davies-Bouldin (1,59). Sirve para P5. |
+| Matriz fila 15 | Shadrooh y Nørvåg (2024), *SMoTeF*, Applied Intelligence, Noruega | **Cumple, falta el cuartil.** Detecta el fraccionamiento con flujo temporal máximo. Se evaluó inyectando patrones en datos bancarios reales (Czech Financial Dataset). Ataca la causa C2. |
+| Candidatos fila 43 | Hayble-Gomes (2023), JMLC (Q2), EE. UU. | **Reserva.** Usa datos sintéticos y un solo escenario. Sirve para P2 (atributos relevantes para el SAR). Es de 2023. |

@@ -110,3 +110,11 @@ En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–
 - **Pendiente:**
   - Fila 15: Gige et al. (2026), Candidatos fila 52, ya leído. Falta el cuartil de Royal Society Open Science.
   - Fila 16: falta un artículo de Candidatos, entre las filas 41, 8, 27 y 25 (PDF de pago).
+
+## Lectura de las filas 8, 27 y 41 de Candidatos (12-10-2026)
+
+| Fila | Artículo | Veredicto |
+|---|---|---|
+| 8 | Astrova (2023), *Anti-money laundering powered by graph machine learning*, Estonia | **SALE.** Es descriptivo, sin datos ni experimentos. Incumple CI4. |
+| 27 | Lokanan (2024), *Predicting Money Laundering Using ML and ANN Algorithms in Banks*, Canadá | **Cumple en lo formal, débil.** Usa datos simulados de bancos de Medio Oriente (2 340 observaciones), con NB, RF, regresión logística, CatBoost y una red neuronal. Accuracy de 77–80 %. Sirve para P2 (variables de hora y día, etapa del lavado). Falta el cuartil. |
+| 41 | Sambandam (2025), *Detection of abnormal transaction using spatial ontology-based DL*, India | **Cumple en lo formal, débil.** Ontología más autoencoder apilado, probado con datos sintéticos y de tarjetas. Accuracy de 93–96 %. Su tema está más cerca del fraude. Falta el cuartil. |

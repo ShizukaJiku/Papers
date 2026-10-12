@@ -118,3 +118,11 @@ En los 4, Crossref confirma que son artículos de revista en inglés, de 2025–
 | 8 | Astrova (2023), *Anti-money laundering powered by graph machine learning*, Estonia | **SALE.** Es descriptivo, sin datos ni experimentos. Incumple CI4. |
 | 27 | Lokanan (2024), *Predicting Money Laundering Using ML and ANN Algorithms in Banks*, Canadá | **Cumple en lo formal, débil.** Usa datos simulados de bancos de Medio Oriente (2 340 observaciones), con NB, RF, regresión logística, CatBoost y una red neuronal. Accuracy de 77–80 %. Sirve para P2 (variables de hora y día, etapa del lavado). Falta el cuartil. |
 | 41 | Sambandam (2025), *Detection of abnormal transaction using spatial ontology-based DL*, India | **Cumple en lo formal, débil.** Ontología más autoencoder apilado, probado con datos sintéticos y de tarjetas. Accuracy de 93–96 %. Su tema está más cerca del fraude. Falta el cuartil. |
+
+## Cierre de la Matriz, 12 de 12 (12-10-2026)
+
+- **Fila 15:** Gige et al. (2026), Royal Society Open Science. Es Q1 en Multidisciplinary, su única categoría. Viene de Candidatos fila 52.
+- **Fila 16:** Lokanan (2024), Journal of Applied Security Research. Es Q2. Viene de Candidatos fila 27.
+- **Reserva:**
+  - Sambandam (2025), Candidatos fila 41: KAIS, Q2 en IA y Q1 en Information Systems.
+  - Hayble-Gomes ya está en la Matriz, fila 14.
